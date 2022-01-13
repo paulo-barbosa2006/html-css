@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "Android";
+    src: url("fontes/idroid.otf") format("opentype");
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    /* Cores do Site */
+    --cor0: #c6ebd6;
+    --cor1: #b4f6bc;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c27;
+    --cor5: #063d1e;
+
+    /* Fontes do Site */
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", cursive;
+    --fonte-android: "Android", cursive;
+}
+
+
+/*Body*/
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+/* Header */
+
+header{
+    background-image: linear-gradient(var(--cor2),rgba(24, 22, 22, 0.781)); 
+    height: 13em;
+    box-shadow: -1px 7px 13px 3px rgba(0,0,0,0.21);
+}
+header > h1{
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    color: white;
+    padding-top: 40px;
+    text-shadow: 0 2px rgb(27, 78, 48);
+    }
+
+header > p{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font: normal arial, sans-serif;
+    text-shadow: 0 1px rgb(27, 78, 48);
+}
+
+/* Nav */
+
+nav{
+    position: relative;
+    bottom: 70px;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav > ul{
+    padding-left: 10px;
+}
+
+a.menu{
+    position: relative;
+    top: 25px;
+    text-decoration: none;
+    color: rgb(51, 209, 117);
+}
+
+a.menu:hover{
+    padding: 5px;
+    border-radius: 3px;
+    transition: 0.2s;
+    color:rgb(32, 59, 43);
+    background-color: rgb(55, 158, 98);
+}
+
+a.menu:active{
+    color: rgb(52, 180, 106);
+}
+
+/* Main */
+main{
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    max-width: 800px;
+    min-width: 290px;
+    margin: 0 auto;
+    padding: 10px 0 4em 15px;
+    box-shadow: 0px 2px 17px 1px rgba(0, 0, 0, 0.219)
+}
+article > h1{
+    font-size: 25px;
+    color: var(--cor5);
+}
+article > h2{
+    padding: 5px;
+    font-size: 20px;
+    background-image:linear-gradient(to right, var(--cor1), transparent);
+    color: var(--cor4);
+}
+article > h1, h2{
+    margin: 15px 0;
+    font-family: var(--fonte-android);
+}
+
+article > p{
+    text-align: justify;
+    margin: 10px 20px 0 0;
+    text-indent: 20px;
+    line-height: 2em;
+}
+
+
+img.bugdroid{
+    width: 50%;
+    left: 25%;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 20px -0.2px 20px -15px;
+    padding: 10px 10px 6px 10px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    width: 96%;
+    height: 93%;
+    left: 15px;
+    top: 14px;
+}
+
+/* Aside */
+aside{
+    border-radius: 5px;
+    background-color: #b4f6bc;
+    position: relative;
+    right: 7px;
+}
+
+aside > h3{
+    padding: 5px 0 5px 5px;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    background-color: var(--cor3);
+}
+ 
+aside > p{
+    padding: 7px;
+}
+
+aside li{
+    padding-left: 10px;
+}
+
+aside ul{
+    list-style-type: "\2714";
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 10px;
+    background-color: var(--cor5);
+    color: white;
+}
+
+footer > p{
+    padding: 13px 0;
+    text-align: center;
+}
+
+/*Strong*/
+strong{
+    color: var(--cor4);
+    background-color:rgba(119, 218, 160, 0.212);
+}
+
+/*Links*/
+a#criador{
+    color: white;
+    text-decoration: none;
+}
+
+a#criador:hover{
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+a#android-history{
+    padding: 0;
+    background-color: transparent;
+}
+
+a.sites-externos{
+    padding: 1.5px;
+    font-weight: bold;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    text-decoration: none;
+}
+
+a.sites-externos:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+a.sites-externos::after{
+    font-size: 13px;
+    position: relative;
+    bottom: 1.2px;
+    font-weight: normal;
+    content: " 🔗";
+}
+
+/* Imagens */
+img{
+    width: 100%;
+    position: relative;
+    right: 7px;
+}

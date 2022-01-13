@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block;
+    background-color: lightblue;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover{
+    background-color: rgb(148, 198, 214);
+    height: 220px;
+    width: 220px;
+    transition-duration: 0.6s;
+}

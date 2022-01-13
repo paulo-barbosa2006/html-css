@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: arial,helvetica,sans-serif;
+            background-color: rgb(82, 103, 197);
+        }
+        header{
+            background-color: rgb(94, 114, 204);
+            padding-bottom: 0.5em;
+        }
+        nav{
+            margin: 0 10px;
+            background-color: rgba(0, 0, 0, 0.067);
+            box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.212);
+        }
+        nav > a{
+            color:black;
+            padding: 0 75px;
+        }
+        footer{
+            background-color: rgb(94, 114, 204);
+            padding: 20px 0;
+        }
+        main{
+            background-color: rgb(94, 114, 204);
+            padding: 5px 0;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: rgb(94, 114, 204);
+            border-radius: 50%;
+        }
+
+        h1{
+            text-align: center;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#" style="border-left: none">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="notícias">
+            <article>
+                <h2>Notícias de última hora</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, doloribus. Aliquam soluta reiciendis vero porro et, nobis, adipisci nemo suscipit corporis, impedit ratione dolor quae distinctio! Inventore, tenetur! Cumque, porro?</p>
+                <aside>
+                    <p>Artigo escrito por José Azevedo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <div id="bola"></div>
+    <footer>
+        <p>Desenvolvido pelo Paulo Barbosa</p>
+    </footer>
+</body>
+</html>

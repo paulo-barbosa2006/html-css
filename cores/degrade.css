@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{ /*configurações globais das CSS*/
+    height: 100%;
+}
+
+body{
+    background-image:linear-gradient(to top, #2A42F7,#3DCCFC, #3AE9F2);
+    background-attachment: fixed;
+}
+
+p{
+    background-image: linear-gradient(to bottom, #F20587, #F2059F 60%, #F29F05, #F28705);
+    text-align: center;
+    color: black;
+}
